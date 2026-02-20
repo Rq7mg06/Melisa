@@ -31,21 +31,24 @@ import (
 )
 
 func init() {
-	helpTexts["/help"] = fmt.Sprintf(`ℹ️ <b>Help Command</b>
-<i>Displays general bot help or detailed information about a specific command.</i>
+	helpTexts["/help"] = fmt.Sprintf(`ℹ️ <b>Yardım Komutu</b>
+<i>Genel bot yardımını veya belirli bir komut hakkında detaylı bilgiyi gösterir.</i>
 
-<u>Usage:</u>
-<code>/help</code> — Show the main help menu.  
-<code>/help &lt;command&gt;</code> — Show help for a specific command.
+<u>Kullanım:</u>
+<code>/yardim</code> — Ana yardım menüsünü gösterir.  
+<code>/yardim &lt;komut&gt;</code> — Belirli bir komut için yardım gösterir.
 
-<b>💡 Tip:</b> You can view help for any command directly by adding a <code>-h</code> or <code>--help</code> flag, e.g. <code>/play -h</code>
+<b>💡 İpucu:</b> Herhangi bir komutun sonuna <code>-h</code> veya <code>--help</code> parametresi ekleyerek doğrudan o komutun yardımını alabilirsiniz, örn. <code>/oynat -h</code>
 
-<b>⚠️ Note:</b> Some commands are <b>restricted</b> to specific contexts (like <b>Groups</b>, <b>Admins</b>, <b>Sudoers</b>, or the <b>Owner</b>).  
-If you try using <code>-h</code> or <code>--help</code> inside a restricted chat or PM, the bot may not respond.  
-To still view help for those commands, use the global format instead:
-<code>/help &lt;command&gt;</code>
+<b>⚠️ Not:</b> Bazı komutlar belirli bağlamlarla <b>sınırlandırılmıştır</b> (örneğin <b>Gruplar</b>, <b>Yöneticiler</b>, <b>Sudo Kullanıcıları</b> veya <b>Kurucu</b>).  
+Eğer kısıtlı bir sohbette veya özel mesajda <code>-h</code> veya <code>--help</code> kullanmaya çalışırsanız, bot yanıt vermeyebilir.  
+Bu komutların yardımını yine de görüntülemek için şu formatı kullanın:
+<code>/yardim &lt;komut&gt;</code>
 
-For more info, visit our <a href="%s">Support Chat</a>.`, config.SupportChat)
+Daha fazla bilgi için <a href="%s">Destek Grubumuzu</a> ziyaret edin.`, config.SupportChat)
+
+	// Türkçe komutu yardım menüsüne eşliyoruz
+	helpTexts["/yardim"] = helpTexts["/help"]
 }
 
 func helpHandler(m *tg.NewMessage) error {
@@ -101,6 +104,23 @@ func helpCallbackHandler(c *tg.CallbackQuery) error {
 	var text string
 	btn := core.GetBackKeyboard(chatID)
 
+	switch parts[1] {
+	case "admins":
+		text = F(chatID, "help_admin")
+	case "sudoers":
+		text = F(chatID, "help_sudo")
+	case "owner":
+		text = F(chatID, "help_owner")
+	case "public":
+		text = F(chatID, "help_public")
+	case "main":
+		text = F(chatID, "help_main")
+		btn = core.GetHelpKeyboard(chatID)
+	}
+
+	c.Edit(text, &tg.SendOptions{ReplyMarkup: btn})
+	return tg.ErrEndGroup
+}
 	switch parts[1] {
 	case "admins":
 		text = F(chatID, "help_admin")
