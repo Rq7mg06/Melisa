@@ -1,22 +1,6 @@
 /*
   - This file is part of YukkiMusic.
-    *
-
-  - YukkiMusic — A Telegram bot that streams music into group voice chats with seamless playback and control.
-  - Copyright (C) 2025 TheTeamVivek
-    *
-  - This program is free software: you can redistribute it and/or modify
-  - it under the terms of the GNU General Public License as published by
-  - the Free Software Foundation, either version 3 of the License, or
-  - (at your option) any later version.
-    *
-  - This program is distributed in the hope that it will be useful,
-  - but WITHOUT ANY WARRANTY; without even the implied warranty of
-  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  - GNU General Public License for more details.
-    *
-  - You should have received a copy of the GNU General Public License
-  - along with this program. If not, see <https://www.gnu.org/licenses/>.
+  - Edited by KIYICI BOSS (@officialkiyici) - Aşko Kuşko Versiyonu 💅
 */
 package modules
 
@@ -37,20 +21,20 @@ import (
 )
 
 func init() {
-	helpTexts["/stats"] = `<i>View detailed bot statistics.</i>
+	helpTexts["/stats"] = `<i>Ayyy benim içimde neler oluyor görmek istersen buraya bakıyoruz aşkooo! (Botun dedikodu haritası) 📊💅</i>
 
-<u>Usage:</u>
-<b>/stats</b> — Show statistics
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/stats</b> — Bütün sistem sırlarımı dökerim 🎀
 
-<b>📊 Information Shown:</b>
-• System stats (OS, CPU, RAM, disk)
-• Go runtime stats (memory, GC)
-• Server resources
-• Served chats count
-• Served users count
+<b>📊 Neler Var Neler Kızzz:</b>
+• Sistem bilgileri (Beynim, hafızam falan) 🧠
+• Go çalışma detayları (Hızım, tempom) 🏃‍♀️
+• Sunucu gücüm (Enerjim ne alemde) ⚡
+• Hizmet ettiğim gruplar (Hangi mekanlara akıyoruz) 💃
+• Hizmet ettiğim kişiler (Kaç kişinin kalbini çaldım) 💖
 
-<b>🔒 Restrictions:</b>
-• <b>Sudo users</b> only`
+<b>🔒 Ama Bir Şartım Var:</b>
+• Sadece <b>Sudo (Patron) Aşkolar</b> görebilir, herkes değil tatlım! Özel hayatımı herkese açamam 💁‍♀️`
 }
 
 func statsHandler(m *telegram.NewMessage) error {
