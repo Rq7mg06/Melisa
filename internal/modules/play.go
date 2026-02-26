@@ -1,6 +1,6 @@
 /*
   - This file is part of YukkiMusic.
-  - Edited by KIYICI BOSS (@officialkiyici)
+  - Edited by KIYICI BOSS (@officialkiyici) - Aşko Kuşko Versiyonu 💅
 */
 package modules
 
@@ -34,93 +34,93 @@ type playOpts struct {
 const playMaxRetries = 3
 
 func init() {
-	helpTexts["/oynat"] = `<i>Sesli sohbette YouTube, Spotify veya diğer kaynaklardan müzik çalın.</i>
+	helpTexts["/oynat"] = `<i>Aşkooo! Sesli sohbette YouTube, Spotify veya istediğin yerden müzik açıyorum, kopuyoruz! 💅✨</i>
 
-<u>Kullanım:</u>
-<b>/oynat [sorgu/URL]</b> — Şarkı ara ve çal
-<b>/oynat [yanıtlanan ses/video]</b> — Yanıtlanan medyayı çal
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/oynat [şarkı adı/URL]</b> — Şarkıyı bulur ve hemen açarım 💖
+<b>/oynat [yanıtlanan ses/video]</b> — Yanıtladığın medyayı çalarım tatlım 🎶
 
-<b>🎵 Desteklenen Kaynaklar:</b>
-• YouTube (videolar, oynatma listeleri)
-• Spotify (şarkılar, albümler, oynatma listeleri)
+<b>🎵 Desteklenen Yerler:</b>
+• YouTube (videolar, listeler falan)
+• Spotify (şarkılar, albümler, çalma listeleri)
 • SoundCloud
-• Doğrudan ses/video bağlantıları
+• Direkt ses/video linkleri
 
-<b>⚙️ Özellikler:</b>
-• Sıra desteği - zaten çalıyorsa sona ekler
-• Sesli sohbete otomatik katılım
-• Süre sınırı kontrolü
-• Çoklu parça desteği (oynatma listeleri)
+<b>⚙️ Neler Yapabiliyorum Kızzz:</b>
+• Sıraya eklerim - biri zaten çalıyorsa peşine takarım 🌸
+• Sesli sohbete kendiliğinden uçar gelirim ✈️
+• Çok uzun şarkıları atlarım (sıkılmayalım) 💁‍♀️
+• Koskoca çalma listelerini bile açarım!
 
-<b>💡 Örnekler:</b>
-<code>/oynat tarkan yolla</code>
+<b>💡 Örnekler Aşko:</b>
+<code>/oynat hadise prenses</code>
 <code>/oynat https://youtu.be/dQw4w9WgXcQ</code>
 
-<b>⚠️ Notlar:</b>
-• Botun sesli sohbette gerekli izinlere sahip olması gerekir
-• Süre sınırını aşan parçalar atlanır
-• Yaklaşan parçaları görmek için <code>/sira</code> kullanın
-• Sırayı atlayıp anında çalmak için <code>/foynat</code> kullanın`
+<b>⚠️ Minik Notlar:</b>
+• Benim sesli sohbette yetkimin olması lazım tatlım, yoksa giremem. 🥺
+• Süresi çok uzun parçaları hiç çekemem, direkt atlarım. 💅
+• Sırada ne var diye merak ediyorsan <code>/sira</code> yaz kızzz.
+• Beklemeye hiç tahammülüm yok diyorsan sırayı ezip hemen çalmak için <code>/foynat</code> kullan! ✨`
 
-	helpTexts["/foynat"] = `<i>Sırayı atlayarak şarkıyı anında çalın.</i>
+	helpTexts["/foynat"] = `<i>Aman bekle bekle nereye kadar! Sırayı falan boşver, hemen açıyorum aşko! 💅💥</i>
 
-<u>Kullanım:</u>
-<b>/foynat [sorgu/URL]</b> — Anında çalmaya başla
-<b>/foynat [yanıtlanan ses/video]</b> — Yanıtlanan medyayı anında çal
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/foynat [sorgu/URL]</b> — Hiç beklemeden anında çalmaya başlar 💖
+<b>/foynat [yanıtlanan ses/video]</b> — Yanıtladığın medyayı anında açar 🎶
 
-<b>🎵 Davranış:</b>
-• Mevcut çalınan şarkıyı durdurur
-• Sırayı temizler
-• Anında çalmaya başlar
+<b>🎵 Ne Yapar Bu:</b>
+• Çalan şarkıyı cart diye keser ✂️
+• Sıradaki her şeyi çöpe atar 🗑️
+• Senin şarkını şak diye başlatır! ✨
 
-<b>🔒 Kısıtlamalar:</b>
-• Sadece <b>sohbet yöneticileri</b> veya <b>yetkili kullanıcılar</b> kullanabilir
+<b>🔒 Ama Bir Şartım Var:</b>
+• Bunu sadece <b>grup adminleri</b> veya <b>yetkili bebikolar</b> kullanabilir, herkes değil tatlım! 💁‍♀️
 
-<b>💡 Örnek:</b>
-<code>/foynat acil duyuru müziği</code>`
+<b>💡 Örnek Aşko:</b>
+<code>/foynat gıybet</code>`
 
-	helpTexts["/voynat"] = `<i>Sesli sohbette video içeriği oynatın (video modu).</i>
+	helpTexts["/voynat"] = `<i>Sadece ses kesmez, klibi de görelim diyorsan video modu tam sana göre aşko! 🎬💖</i>
 
-<u>Kullanım:</u>
-<b>/voynat [sorgu/URL]</b> — Videoyu oynat
-<b>/voynat [yanıtlanan video]</b> — Yanıtlanan videoyu oynat
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/voynat [sorgu/URL]</b> — Videoyu açar 🍿
+<b>/voynat [yanıtlanan video]</b> — Yanıtladığın videoyu izletir 🎀
 
 <b>📹 Özellikler:</b>
-• Tam video oynatma desteği
-• Ses + Video akışı
-• Ses ile aynı sıra sistemi
+• Tam ekran video keyfi 💅
+• Hem ses hem görüntü kalitesi ✨
+• Sesle aynı sıra sistemine girer
 
-<b>⚠️ Notlar:</b>
-• Video akış izinleri gerektirir
-• Zorla video oynatmak için <code>/fvoynat</code> kullanın`
+<b>⚠️ Minik Notlar:</b>
+• Bunun için bana video yayınlama izni vermen lazım tatlım. 🌸
+• Videoyu zorla başa almak istersen <code>/fvoynat</code> kullan kız! 💁‍♀️`
 
-	helpTexts["/fvoynat"] = `<i>Sırayı atlayarak video içeriğini anında oynatın.</i>
+	helpTexts["/fvoynat"] = `<i>Beklemeye tahammülü olmayanlar için videoyu anında açma komutu! 🎬💥</i>
 
-<u>Kullanım:</u>
-<b>/fvoynat [sorgu/URL]</b> — Videoyu anında oynat
-
-<b>🔒 Kısıtlamalar:</b>
-• Sadece yönetici/yetkili komutudur`
-
-	helpTexts["/koynat"] = `<i>Bağlı kanalın sesli sohbetinde çalın.</i>
-
-<u>Kullanım:</u>
-<b>/koynat [sorgu]</b> — Bağlı kanalda çal
-
-<b>⚙️ Gerekli Kurulum:</b>
-Önce şunu kullanın: <code>/kanaloynat --set [kanal_id]</code>`
-
-	helpTexts["/kanaloynat"] = `<i>Kanal oynatma modu için bağlı kanalı yapılandırın.</i>
-
-<u>Kullanım:</u>
-<b>/kanaloynat --set [kanal_id]</b> — Bağlı kanalı ayarla
-
-<b>⚙️ Davranış:</b>
-• Bir kanalı mevcut gruba bağlar
-• Bot kanala erişebilmelidir
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/fvoynat [sorgu/URL]</b> — Videoyu hiç beklemeden anında başlatır 💖
 
 <b>🔒 Kısıtlamalar:</b>
-• Sadece <b>sohbet yöneticileri</b> yapılandırabilir`
+• Sadece patronlar (admin/yetkili) kullanabilir tatlım! 👑`
+
+	helpTexts["/koynat"] = `<i>Müziği grupta değil, bağlı olduğumuz kanalda açıyoruz aşkooo! 📢🎀</i>
+
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/koynat [sorgu]</b> — Şarkıyı kanalda çaldırır 🎶
+
+<b>⚙️ Önce Şunu Yapman Lazım:</b>
+Açmadan önce <code>/kanaloynat --set [kanal_id]</code> yapıp kanalı bana tanıtman lazım tatlım! 🌸`
+
+	helpTexts["/kanaloynat"] = `<i>Hangi kanalda yayın yapacağımı bana buradan söylüyorsun aşko! 📡💖</i>
+
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/kanaloynat --set [kanal_id]</b> — Yayın yapacağım kanalı ayarla 🎀
+
+<b>⚙️ Ne İşe Yarar:</b>
+• Bir kanalı şu anki gruba bağlar 🔗
+• Tabii benim o kanala girebiliyor olmam lazım tatlım! 💁‍♀️
+
+<b>🔒 Kısıtlamalar:</b>
+• Bunu sadece <b>grup yöneticileri</b> ayarlayabilir aşkım! 👑`
 
 	helpTexts["/oynatzorla"] = helpTexts["/foynat"]
 	helpTexts["/fkoynat"] = helpTexts["/kfoynat"]
@@ -315,7 +315,7 @@ func prepareRoomAndSearchMessage(
 			"query": html.EscapeString(query),
 		})
 	} else {
-		searchStr = "**𝐌𝐞𝐯𝐳𝐮𝐲𝐮 𝐚𝐫𝐚𝐬̧𝐭𝐢𝐫𝐢𝐲𝐨𝐫𝐮𝐦, 𝐛𝐞𝐤𝐥𝐞 𝐛𝐞𝐛𝐞...**" // MUSTAFA ARAZ ŞİVESİ
+		searchStr = "**Ayyy şarkını arıyorum tatlım, bir saniye bekle aşkooo... 💅🔎🌸**" // AŞKO KUŞKO ŞİVESİ
 	}
 
 	replyMsg, err := m.Reply(searchStr)
@@ -822,9 +822,9 @@ func safeGetTracks(
 
 	tracks, err = platforms.GetTracks(m, video)
 
-	// Eğer Telegram boş ID gönderdin diyorsa araya Kıyıcı Boss girer!
+	// Eğer Telegram boş ID gönderdin diyorsa araya Aşko Bot girer!
 	if err != nil && strings.Contains(err.Error(), "MESSAGE_IDS_EMPTY") {
-		return nil, errors.New("**𝐋𝐚 𝐠𝐚𝐫𝐝𝐚𝐬̧, 𝐯𝐢𝐝𝐞𝐨 𝐛𝐨𝐳𝐮𝐤 𝐯𝐞𝐲𝐚 𝐬𝐢𝐥𝐢𝐧𝐦𝐢𝐬̧ (𝐌𝐄𝐒𝐒𝐀𝐆𝐄_𝐈𝐃𝐒_𝐄𝐌𝐏𝐓𝐘). 𝐁𝐚𝐬̧𝐤𝐚 𝐛𝐢𝐫 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞𝐧𝐞 𝐛𝐞𝐛𝐞!**")
+		return nil, errors.New("**Ayyy aşko, bu video bozuk ya da silinmiş galiba (MESSAGE_IDS_EMPTY). Başka bir tane denesene bebeğim! 🥺💔💅**")
 	}
 
 	return tracks, err
