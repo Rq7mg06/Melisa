@@ -1,22 +1,6 @@
 /*
   - This file is part of YukkiMusic.
-    *
-
-  - YukkiMusic — A Telegram bot that streams music into group voice chats with seamless playback and control.
-  - Copyright (C) 2025 TheTeamVivek
-    *
-  - This program is free software: you can redistribute it and/or modify
-  - it under the terms of the GNU General Public License as published by
-  - the Free Software Foundation, either version 3 of the License, or
-  - (at your option) any later version.
-    *
-  - This program is distributed in the hope that it will be useful,
-  - but WITHOUT ANY WARRANTY; without even the implied warranty of
-  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  - GNU General Public License for more details.
-    *
-  - You should have received a copy of the GNU General Public License
-  - along with this program. If not, see <https://www.gnu.org/licenses/>.
+  - Edited by KIYICI BOSS (@officialkiyici) - Aşko Kuşko Versiyonu 💅
 */
 package modules
 
@@ -31,19 +15,19 @@ import (
 )
 
 func init() {
-	helpTexts["/resume"] = `<i>Resume the paused playback.</i>
+	helpTexts["/resume"] = `<i>Ayyy şarkı yarım mı kaldı? Durdurulan müziği kaldığı yerden devam ettirir aşkooo! 🎶💅</i>
 
-<u>Usage:</u>
-<b>/resume</b> — Resume playback from pause
+<u>Nasıl kullanılır bebeğim:</u>
+<b>/resume</b> — Bekleyen şarkıyı canlandırır, koptuğumuz yerden devam! 💖
 
-<b>⚙️ Behavior:</b>
-• Continues from last paused position
-• Cancels auto-resume timer if active
+<b>⚙️ Neler Yapabiliyorum Kızzz:</b>
+• Şarkı tam nerede kaldıysa oradan başlar, hiçbir detayı kaçırmazsın tatlım 🌸
+• Kendi kendine başlama süresi falan varsa iptal eder, ipler senin elinde aşkım 💁‍♀️
 
-<b>⚠️ Notes:</b>
-• Can only resume if currently paused
-• Position is preserved during pause
-• Speed settings remain active after resume`
+<b>⚠️ Minik Notlar:</b>
+• Zaten bangır bangır çalan şarkıyı devam ettiremem kız, delirtme beni! Sadece durdurulmuşsa işe yarar. 💅
+• Sen durdurduğunda saniyesi saniyesine aklımda tutarım, unutmam 🎀
+• Şarkı hızını değiştirdiysen o ayarların aynen kalır, modumuz asla bozulmaz ✨`
 }
 
 func resumeHandler(m *telegram.NewMessage) error {
@@ -101,4 +85,5 @@ func handleResume(m *telegram.NewMessage, cplay bool) error {
 	}
 
 	return telegram.ErrEndGroup
+}
 }
