@@ -1,589 +1,550 @@
-Name: "🇹🇷 Türkçe"
+Name: "🌸 Aşko Kuşko Türkçe 💅"
 
-# butonlar
-ADD_ME_BTN: "⚡ Beni Grubuna Ekle"
-BROADCAST_CANCEL_BTN: "🚫 Yayını İptal Et"
-CLOSE_BTN: "Kapat"
-DOWNLOAD_CANCEL_BTN: "🚦 İndirmeyi İptal Et"
+# 🎀 Butonlar (Tıklanabilir Şekerlemeler)
+ADD_ME_BTN: "✨ Beni Grubuna Ekle Aşkooo"
+BROADCAST_CANCEL_BTN: "🚫 Yayını İptal Et Bebeğim"
+CLOSE_BTN: "Kapat Gitsin 💅"
+DOWNLOAD_CANCEL_BTN: "🚦 İndirmeyi İptal Et Tatlım"
 GC_HELP_BTN: "📒 Komutlar"
 
-START_HELP_BTN: "❓ Yardım & Komutlar"
+START_HELP_BTN: "❓ Yardım & Komutlar ✨"
 
-UPDATES_BTN: "📢 Güncellemeler"
-SUPPORT_BTN: "💬 Destek"
+UPDATES_BTN: "📢 Neler Oluyor Neler?"
+SUPPORT_BTN: "💬 Pembiş Destek"
 
-HELP_ADMINS_BTN: "🛠 Yöneticiler"
-HELP_PUBLIC_BTN: "🌍 Genel"
-HELP_OWNER_BTN: "👑 Sahip"
-HELP_SUDOERS_BTN: "⚡ Sudo Kullanıcıları"
+HELP_ADMINS_BTN: "🛠 Yönetici Aşkolar"
+HELP_PUBLIC_BTN: "🌍 Genel Şov ✨"
+HELP_OWNER_BTN: "👑 Büyük Patron"
+HELP_SUDOERS_BTN: "⚡ Sudo Bebikolar"
 
-BACK_BTN: "⬅️ Geri"
+BACK_BTN: "⬅️ Ay Geri Git"
 
-# komut kullanımı hataları
-invalid_bool: "⚠️ <b>Geçersiz değer.</b>\nLütfen 'enable' veya 'disable' kullanın."
+# ❌ Komut Hataları (Trip Atma Bölümü)
+invalid_bool: "⚠️ <b>Aşko yanlış yazdın!</b>\nLütfen 'enable' (aç) veya 'disable' (kapat) kullan tatlım."
 
-active_chats_info: "📊 <b>Aktif Sohbetler:</b>\n\nBot sisteminde şu an <i>{count}</i> aktif sohbet var."
-active_chats_info_with_broken: "📊 <b>Aktif Sohbetler:</b>\n\nSistemde <i>{count}</i> aktif sohbet var, ancak bunlardan <i>{broken}</i> tanesi düzgün görüntülenemiyor olabilir."
+active_chats_info: "📊 <b>Şu An Kimlerle Kopuyoruz:</b>\n\nSistemde <i>{count}</i> tane aktif grup var bebeğim, maşallah!"
+active_chats_info_with_broken: "📊 <b>Aktif Dedikodular:</b>\n\nSistemde <i>{count}</i> aktif grup var ama <i>{broken}</i> tanesi biraz naz yapıyor, göremiyorum."
 
-
-# 🚫 Asistan Kısıtlaması
+# 🚫 Asistan Kısıtlaması (Eyvah!)
 assistant_restricted_warning: |
-  ⚠️ <b>Asistan Kısıtlandı</b>
+  ⚠️ <b>Ay Asistanım Küstü!</b>
 
-  {assistant} (ID: <code>{id}</code>) isimli asistan bu grupta <b>yasaklanmış</b> veya kısıtlanmış.
-  Bu durum devam ederken müzik çalamam, kuyruğu yönetemem veya temizlik yapamam.
+  {assistant} (ID: <code>{id}</code>) asistanımız bu grupta <b>yasaklanmış</b> tatlım! 👀
+  Yasağı kalkmadan ne şarkı açarım, ne temizlik yaparım, öylece otururum valla! 💅
 
-  <i>Özellikleri geri kazanmak için asistanın yasağını kaldırın 🎵</i>
+  <i>Hemen yasağını kaldır da şarkılara devam edelim aşkooo 🎵🌸</i>
 
 autoplay_usage: |
-  ⚙️ <b>Otomatik Oynatma Kontrolü</b>
+  ⚙️ <b>Otomatik Şov Kontrolü</b>
 
-  <i>Etkinleştirildiğinde, kuyruk boşaldığında bot otomatik olarak önerilen şarkıları çalar.</i>
+  <i>Bunu açarsan liste bitince ben kafama göre güzel şarkılar açarım tatlım. ✨</i>
   
   Kullanım: {cmd} [enable|disable]
 
-  <i><b>Mevcut durum:</b> {action}</i>
+  <i><b>Şu anki modum:</b> {action}</i>
 
 autoplay_updated: |
-  ⚙️ <b>Otomatik Oynatma Güncellendi</b>
+  ⚙️ <b>Otomatik Şov Güncellendi</b>
   
-  <i>Otomatik oynatma, {user} tarafından <b>{action}</b> konumuna getirildi.</i>
+  <i>Otomatik çalma işini {user} aşkım <b>{action}</b> yaptı. 💅✨</i>
 
-
-# 🧩 Yetki mesajları
-auth_no_user: "⚠️ Lütfen bir kullanıcı belirtin:\n{cmd} [user_id] veya bir mesaja yanıt verin."
-user_extract_fail: "⚠️ Kullanıcı bilgisi alınamadı: <i>{error}</i>"
-auth_limit_reached: "⚠️ Bu sohbet yetkili kullanıcı sınırına ulaştı ({limit}). Yeni birini eklemek için önce birini çıkarın."
-already_authed: "⚠️ Bu kullanıcı zaten yetkili."
+# 🧩 Yetki Mesajları
+auth_no_user: "⚠️ Ay kimi ekleyeyim aşko? Ya ID yaz ya da o tatlışın mesajını yanıtla."
+user_extract_fail: "⚠️ Ay kullanıcıyı bulamadım, kaybolmuş galiba: <i>{error}</i>"
+auth_limit_reached: "⚠️ Ay çok kalabalık olduk! Sınır dolmuş ({limit}). Birini şutlamadan yenisini ekleyemem tatlım."
+already_authed: "⚠️ Bu aşko zaten listede, unutmuşsun tatlım!"
 
 # 🤖 Yetki Ekleme
-cannot_authorize_user: "⚠️ Bu kullanıcıya yetki verilemez.\nBot sahibi, botun kendisi veya siz zaten doğal yetkilere sahipsiniz."
-addauth_user_is_admin: "⚠️ Bu kullanıcı zaten grup yöneticisi. Ek yetki verilmesine gerek yok."
-addauth_bot_user: "🤖 Bir botu yetkili listesine ekleyemezsiniz — yetkililer insan olmalı!"
-addauth_add_fail: "❌ Yetkili eklenirken hata oluştu: {error}"
-addauth_success_with_count: "✅ {user} eklendi.\nŞu an {count}/{limit} yetkili kullanıcı var."
-addauth_success: "✅ {user} başarıyla yetkili listesine eklendi."
+cannot_authorize_user: "⚠️ Ay tatlım buna yetki veremem. Patron, ben veya sen zaten doğuştan yetkiliyiz! ✨"
+addauth_user_is_admin: "⚠️ Bu aşko zaten admin, ekstra yetkiye ne hacet tatlım?"
+addauth_bot_user: "🤖 Ay botu mu ekleyeceğiz? Sadece gerçek aşkolara yetki veriyoruz tatlım! 💅"
+addauth_add_fail: "❌ Yetki verirken bir aksilik çıktı bebeğim: {error}"
+addauth_success_with_count: "✅ {user} eklendi tatlım!\nŞu an {count}/{limit} tane yetkili aşkomuz var. ✨"
+addauth_success: "✅ {user} artık bizden biri, yetkisini verdim gitti! 🌸"
 
 # 🤖 Bot Gruba Eklendi
-bot_added_normal: "🎵 Beni eklediğiniz için teşekkürler! Müzik çalmaya başlamak için /play [şarkı adı] komutunu kullanın."
+bot_added_normal: "🌸 <b>Ayyy hoş geldim!</b> Beni eklediğiniz için çok mersi tatlışlar! Şarkı açmak isterseniz /oynat yazın, hemen gelirim! ✨🎶"
 
 # 🛠️ Bakım Modunda Eklendi
-bot_added_maintenance: "⚠️ Şu an bakımdayım ve kısa süre içinde döneceğim. Sabrınız için teşekkürler! ⏰"
+bot_added_maintenance: "⚠️ Ay tam da bakım yapıyordum tatlım! Birazdan döneceğim, bekle beni aşkooo! ⏰💅"
 maint_reason_generic: "<i>📝 Sebep: {reason}</i>"
 
 # ⚠️ Yetki Kaybı
 bot_demotion_goodbye: |
-  <b>⚠️ Yetki Kaybedildi</b>
+  <b>⚠️ Ay Ayıp Ettiniz!</b>
 
-  <b>Yöneticilik yetkim kaldırıldı</b>, bu yüzden görevlerimi yerine getiremiyorum.
-  Yeterli izinlerim olmadan burada çalışamam, bu yüzden <i>sohbetten ayrılıyorum</i>.
+  <b>Adminliğimi aldınız</b>, artık hiçbir şeye karışamam! 🥺
+  Yetkim olmadan burada duramam tatlım, <i>ben kaçar</i>.
 
-  <b>Hoşça kalın 👋</b>
+  <b>Kib bye! 💅👋</b>
 
-broadcast_already_running: "⚠️ Zaten çalışan bir yayın var.\n\nLütfen bitmesini bekleyin veya şununla iptal edin:\n• <code>/broadcast -cancel</code>\n• Veya mesajdaki İptal butonuna basın"
-broadcast_parse_failed: "❌ Yayın komutu ayrıştırılamadı:\n<code>{error}</code>"
-broadcast_no_content: "⚠️ Yayın için içerik belirtilmedi.\n\n<b>Kullanım:</b> <code>{cmd} [metin veya bir mesaja yanıt]</code>"
-broadcast_fetch_chats_failed: "❌ Sohbet listesi alınamadı:\n<code>{error}</code>"
-broadcast_fetch_users_failed: "❌ Kullanıcı listesi alınamadı:\n<code>{error}</code>"
-broadcast_no_targets: "⚠️ Yayın için hedef bulunamadı."
-broadcast_initializing: "📡 Yayın başlatılıyor...\n\nLütfen bekleyin..."
-broadcast_cancelled_header: "🚫 Yayın İptal Edildi"
-broadcast_completed_header: "✅ Yayın Tamamlandı"
-broadcast_progress_header: "📡 Yayınlanıyor..."
-broadcast_total_chats: "📊 Toplam Sohbet: {done}/{total} (%{progress})"
-broadcast_total_users: "👥 Toplam Kullanıcı: {done}/{total} (%{progress})"
-broadcast_failed_chats: "❌ Başarısız Sohbet: {count}"
-broadcast_failed_users: "❌ Başarısız Kullanıcı: {count}"
-broadcast_delay: "⏱ Gecikme: {delay}s"
+broadcast_already_running: "⚠️ Ay dur bir tane yayın yapıyorum zaten! Bitince yenisine bakarız bebeğim."
+broadcast_parse_failed: "❌ Ay komutu anlayamadım tatlım: <code>{error}</code>"
+broadcast_no_content: "⚠️ Ay ne söyleyeceğimi yazmadın ki aşko! <b>Kullanım:</b> <code>{cmd} [mesaj]</code>"
+broadcast_fetch_chats_failed: "❌ Grupları bulamadım tatlım: <code>{error}</code>"
+broadcast_fetch_users_failed: "❌ Aşkoları bulamadım: <code>{error}</code>"
+broadcast_no_targets: "⚠️ Kimseyi bulamadım ki yayın yapayım tatlım."
+broadcast_initializing: "📡 Yayına hazırlanıyorum aşkooo... Bekle iki dakika süsleneyim..."
+broadcast_cancelled_header: "🚫 Yayını İptal Ettim Tatlım"
+broadcast_completed_header: "✅ Ay bitti sonunda! Herkes duydu sesimizi ✨"
+broadcast_progress_header: "📡 Herkese fısıldıyorum..."
+broadcast_total_chats: "📊 Toplam Grup: {done}/{total} (%{progress})"
+broadcast_total_users: "👥 Toplam Aşko: {done}/{total} (%{progress})"
+broadcast_failed_chats: "❌ Küsüp Dinlemeyen Gruplar: {count}"
+broadcast_failed_users: "❌ Dinlemeyen Aşkolar: {count}"
+broadcast_delay: "⏱ Bekleme: {delay}s"
 broadcast_elapsed: "⏰ Geçen Süre: {elapsed}"
-broadcast_eta: "⏳ Tahmini Bitiş: {eta}"
-broadcast_success_rate: "✨ Başarı Oranı: %{rate} ({sent}/{total})"
-broadcast_not_running: "ℹ️ Şu an çalışan bir yayın yok."
-broadcast_cancel_success: "🚫 Yayın başarıyla iptal edildi."
-broadcast_cancel_owner_only: "⚠️ Yayınları sadece bot sahibi iptal edebilir."
-broadcast_cancel_done: "🚫 Yayın durduruldu."
+broadcast_eta: "⏳ Bitiş Tahminim: {eta}"
+broadcast_success_rate: "✨ Başarı Oranımız: %{rate} ({sent}/{total})"
+broadcast_not_running: "ℹ️ Ay şu an bir şey duyurmuyorum tatlım."
+broadcast_cancel_success: "🚫 Tamam tamam, yayını durdurdum aşko."
+broadcast_cancel_owner_only: "⚠️ Ay bunu sadece Büyük Patron yapabilir tatlım!"
+broadcast_cancel_done: "🚫 Yayın durdu bebeğim."
 
 # 🎧 Kanal Oynatma (CPlay)
+cplay_id_not_set: "⚠️ Ay kanal ID'si yazmıyor! Ayarlamak için <code>/cplay --set &lt;id&gt;</code> kullan tatlım."
+cplay_usage: "<b>Nasıl Kullanılır:</b> <code>/cplay --set &lt;kanal_id&gt;</code>"
+cplay_invalid_chat_id: "<b>ID Yanlış Aşko:</b> Lütfen düzgün bir sayı yaz tatlım."
+cplay_resolve_peer_fail: "<b>Kanalı Bulamadım:</b> Oraya girebiliyor muyum bir bak tatlım."
+cplay_invalid_target: "<b>Hatalı Hedef:</b> Bu yazdığın bir kanal değil ki aşko!"
+cplay_channel_not_accessible: "<b>Giremiyorum:</b> Lütfen o kanalda beni admin yap tatlım! ✨"
+cplay_save_error: "<b>Eyvah:</b> Kanalı kaydedemedim bebeğim."
+cplay_enabled: "✅ <b>Kanal Şovu Başladı!</b> Artık bütün şarkılar <code>{channel_id}</code> kanalında çınlayacak aşkooo! ✨🎶"
 
-cplay_id_not_set: "⚠️ Kanal ID'si ayarlanmadı.\nAyarlamak için <code>/cplay --set &lt;sohbet_id&gt;</code> kullanın."
-cplay_usage: "<b>Kullanım:</b> <code>/cplay --set &lt;kanal_id&gt;</code>"
-cplay_invalid_chat_id: "<b>Geçersiz ID:</b> Lütfen kanal için geçerli bir tam sayı ID sağlayın."
-cplay_resolve_peer_fail: "<b>Kanal bulunamadı:</b> Kanal detayları alınamadı. Erişebilir olduğumdan emin olun."
-cplay_invalid_target: "<b>Geçersiz Hedef:</b> Sağlanan ID geçerli bir kanal değil."
-cplay_channel_not_accessible: "<b>Kanala Erişilemiyor:</b> Lütfen hedef kanalda yönetici olduğumdan emin olun."
-cplay_save_error: "<b>Hata:</b> Kanal ayarları kaydedilemedi."
-cplay_enabled: "✅ <b>Kanal Oynatma etkinleştirildi.</b> Tüm <code>/c</code> komutları artık <code>{channel_id}</code> kanalında çalışacak."
-
-# Geri çağırma (Callback) mesajları
-invalid_request: "⚠️ Geçersiz istek."
-unknown_action: "⚠️ Bilinmeyen eylem."
-download_cancelled: "✅ İndirme iptal edildi."
-no_download_to_cancel: "ℹ️ İptal edilecek indirme yok."
+# ✨ Callback Mesajları
+invalid_request: "⚠️ Ay bu ne aşko? Geçersiz!"
+unknown_action: "⚠️ Ay ne yapacağımı şaşırdım, bilinmeyen eylem!"
+download_cancelled: "✅ İndirmeyi durdurdum tatlım, vazgeçtim."
+no_download_to_cancel: "ℹ️ Ay zaten bir şey indirmiyorum ki aşko."
 
 # Duraklatma
-cb_pause_success: "⏸️ Şarkı {position} konumunda duraklatıldı"
+cb_pause_success: "⏸️ Şarkıyı {position} saniyesinde dondurdum aşko!"
 cb_pause_message: |
-  <b>⏸️ Şarkı Duraklatıldı</b>
+  <b>⏸️ Şarkı Donduruldu Tatlım</b>
 
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
   <b>▫ Konum:</b> {position} / {duration}
-  <b>▫ Duraklatan:</b> {user}
+  <b>▫ Donduran:</b> {user} 💅
 
 # Devam etme
-cb_already_playing: "ℹ️ Şarkı zaten oynatılıyor."
-cb_resume_failed: "❌ Devam ettirme başarısız oldu."
-cb_resume_success: "▶️ {position} konumundan devam ediliyor."
+cb_already_playing: "ℹ️ Ay zaten çalıyor tatlım, duymuyor musun?"
+cb_resume_failed: "❌ Ay devam ettiremedim, bir şeyler oldu!"
+cb_resume_success: "▶️ Ay hadi devam edelim, koptuğumuz yer: {position} ✨"
 cb_resume_message: |
-  <b>🎵 Şimdi Oynatılıyor:</b>
+  <b>🎵 Şimdi Şov Zamanı:</b>
 
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
   <b>▫ Süre:</b> {duration}
-  <b>▫ Devam ettiren:</b> {user}
+  <b>▫ Devam Ettiren:</b> {user} 🌸
 
-# Tekrar oynatma
-cb_replaying: "🔁 <b>Şarkı baştan oynatılıyor...</b>"
-cb_replay_failed: "❌ Tekrar oynatma başarısız."
-cb_replay_success: "🔁 Şarkı tekrar başlatıldı."
-cb_replay_edited: "🔁 Şarkı {user} tarafından tekrar başlatıldı."
+# Tekrar
+cb_replaying: "🔁 <b>Ay çok güzeldi, baştan açıyorum tatlım...</b>"
+cb_replay_failed: "❌ Baştan açamadım aşko."
+cb_replay_success: "🔁 Şarkıyı şak diye başa sardım! ✨"
+cb_replay_edited: "🔁 Şarkı {user} aşkım tarafından başa alındı."
 
-# Atla (Skip)
-cb_skip_queue_empty: "⏹️ Oynatma durduruldu — kuyruk boş."
-cb_skip_download_failed: "❌ Sıradaki şarkı indirilemedi."
-cb_skip_play_failed: "❌ Sıradaki şarkı oynatılamadı."
-cb_skip_success: "⏭️ Şarkı atlandı."
-cb_skip_edited: "⏭️ {user} tarafından atlandı."
+# Atla
+cb_skip_queue_empty: "⏹️ Ay bitti her şey, liste boş tatlım!"
+cb_skip_download_failed: "❌ Sıradaki şarkıyı indiremedim bebeğim."
+cb_skip_play_failed: "❌ Sıradaki şarkı açılmıyor, küsmüş galiba!"
+cb_skip_success: "⏭️ Ay bu şarkı sıktı zaten, hemen atlıyorum tatlım! ✨"
+cb_skip_edited: "⏭️ {user} tarafından şutlandı ve sıradakine geçildi. 💅"
 
 # Durdur
-cb_stop_success: "⏹️ Oynatma durduruldu."
+cb_stop_success: "⏹️ Tamam sustum, her şeyi durdurdum tatlım. 👀"
 
-# Ses Kısma / Açma
-cb_mute_success: "🔇 Ses kapatıldı."
+# Ses
+cb_mute_success: "🔇 Ay sustum! Kimse duymasın..."
 cb_mute_message: |
-  <b>🔇 Ses Kapatıldı</b>
+  <b>🔇 Ses Kapatıldı Tatlım</b>
 
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
-  <b>▫ Kapatan:</b> {user}
+  <b>▫ Susturan:</b> {user} 💅
 
-cb_unmute_success: "🔊 Ses açıldı."
+cb_unmute_success: "🔊 Açtım sesi aşkooo, hadi kopuyoruz! 💃✨"
 
-cb_seek_success: "⏩ {seconds} saniye ileri sarıldı"
-cb_seek_near_end: "⚠️ {seconds} saniye ileri sarmak imkansız — parça bitmek üzere."
-cb_seek_edited: "⏩ {seconds} saniye ileri sarıldı — {user}"
+cb_seek_success: "⏩ {seconds} saniye ileri fırladım!"
+cb_seek_near_end: "⚠️ Ay bitiyor zaten, nereye sarayım aşko?"
+cb_seek_edited: "⏩ {seconds} saniye ileri fırladık — {user} ✨"
 
-cb_seekback_success: "⏪ {seconds} saniye geri sarıldı"
-cb_seekback_edited: "⏪ {seconds} saniye geri sarıldı — {user}"
+cb_seekback_success: "⏪ {seconds} saniye geri sardım tatlım!"
+cb_seekback_edited: "⏪ {seconds} saniye geri sardım — {user} 🌸"
 
 # Yetki Silme
-del_auth_not_authorized: "⚠️ Bu kullanıcı zaten yetkili değil."
-del_auth_remove_fail: "❌ Yetkili kaldırılırken hata: <code>{error}</code>"
-del_auth_success: "✅ {user} başarıyla yetkili listesinden çıkarıldı."
+del_auth_not_authorized: "⚠️ Bu aşko zaten yetkili değil ki tatlım."
+del_auth_remove_fail: "❌ Yetkiyi alırken bir şeyler oldu: <code>{error}</code>"
+del_auth_success: "✅ {user} artık sıradan bir aşko, yetkisini aldım gitti! 💅"
 
 # Yetki Listesi
-authlist_fetch_fail: "❌ Yetkili listesi alınamadı: <code>{error}</code>"
-authlist_empty: "ℹ️ Bu sohbette yetkili kullanıcı bulunmuyor."
-authlist_fetching: "⏳ Yetkili listesi getiriliyor..."
-authlist_header: "<b>Yetkili Kullanıcılar:</b>"
-authlist_user_fail: "{index}. <code>{user_id}</code> (Kullanıcı bilgisi alınamadı)"
-authlist_user_entry: "{index}. {user} (<code>{user_id}</code>)"
-authlist_total: "<b>Toplam:</b> {count} kullanıcı"
+authlist_fetch_fail: "❌ Listeyi bulamadım tatlım: <code>{error}</code>"
+authlist_empty: "ℹ️ Ay bu grupta hiç yetkili aşko yok!"
+authlist_fetching: "⏳ Listeyi süslüyorum, hemen getiriyorum..."
+authlist_header: "<b>Yetkili Güzeller Listesi:</b>"
+authlist_user_fail: "{index}. <code>{user_id}</code> (Tanıyamadım bu kim?)"
+authlist_user_entry: "{index}. {user} (<code>{user_id}</code>) ✨"
+authlist_total: "<b>Toplam:</b> {count} tane aşko"
 
-autoleave_fetch_fail: "⚠️ <b>Otomatik Ayrılma durumu alınamadı.</b>"
-autoleave_status: "🏃‍♂️ <b>Otomatik Ayrılma Kontrolü</b>\n\nEtkinleştirildiğinde asistan sohbetten otomatik ayrılır.\nKullanım: {cmd} [enable|disable]\nMevcut durum: {action}"
-autoleave_already: "⚠️ Otomatik Ayrılma zaten {action}"
-autoleave_update_fail: "⚠️ <b>Durum güncellenemedi.</b>"
-autoleave_updated: "🏃‍♂️ Otomatik Ayrılma <b>{action}</b> yapıldı."
+autoleave_fetch_fail: "⚠️ Ay durumu öğrenemedim tatlım."
+autoleave_status: "🏃‍♂️ <b>Kendi Kendine Kaçma Ayarı</b>\n\nBunu açarsan asistan işi bitince hemen kaçar tatlım.\nMevcut durum: {action}"
+autoleave_already: "⚠️ Ay zaten {action} modundayım tatlım."
+autoleave_update_fail: "⚠️ Güncelleyemedim bebeğim."
+autoleave_updated: "🏃‍♂️ Kaçma modu artık <b>{action}</b> tatlım. 💅"
 
-enabled: "Etkin"
-disabled: "Devre Dışı"
+enabled: "Açık ✨"
+disabled: "Kapalı 🚫"
 
-bug_usasge: "⚠️ Lütfen hatayı açıklayın. Kullanım: {cmd} <sorun> veya bir mesaja yanıt verin."
-bug_thanks: "✅ Hata raporunuz için teşekkürler! Geliştiricilere gönderildi."
+bug_usasge: "⚠️ Ay ne sorunu var tatlım? Yaz da Büyük Patron'a fısıldayayım."
+bug_thanks: "✅ Mersi tatlım! Hemen patronlara haber verdim. 🌸"
 
 bug_report_format: |
-  <b>🐞 Yeni Hata Raporu</b>
+  <b>🐞 Ay Yeni Bir Sorun Var!</b>
 
   <b>Gönderen:</b> {user} (<code>{user_id}</code>)
-  <b>Sohbet:</b> {chat} (<code>{chat_id}</code>)
+  <b>Grup:</b> {chat} (<code>{chat_id}</code>)
 
-  <b>Rapor:</b>
+  <b>Hata Mesajı:</b>
   <pre>{report}</pre>
   
-clear_no_active: "⚠️ <b>Temizlenecek aktif bir oynatma veya kuyruk yok.</b>"
-clear_success: "✅ Kuyruk {user} tarafından temizlendi."
+clear_no_active: "⚠️ <b>Ay temizlenecek bir şey yok ki aşko!</b>"
+clear_success: "✅ Listeyi {user} aşkım tertemiz yaptı, mis gibi oldu! ✨🧼"
 
 err_assistant_banned: |
-  <b>🚫 Asistan Engellendi</b>
+  <b>🚫 Ay Asistanımı Şutlamışlar!</b>
 
-  Müzik çalamıyorum çünkü {user} (UserID: <code>{id}</code>) bu sohbetten <b>yasaklanmış</b> veya <b>çıkarılmış</b>.
+  Şarkı açamam çünkü {user} (ID: <code>{id}</code>) bu gruptan <b>kovulmuş</b> tatlım! 👀
 
-  <i>✅ Yasağı kaldırdınız mı? Güncellemek için /reload kullanın.</i>
+  <i>✅ Geri aldınız mı? Öyleyse /reload yaz da kendime geleyim.</i>
 
 err_admin_permission_required: |
-  ⚠️ <b>Yönetici Yetkisi Gerekli</b>
+  ⚠️ <b>Yetki Lazım Bebeğim</b>
 
-  Sohbet üyelerini kontrol edebilmem için <i>yönetici erişimine</i> ihtiyacım var.
+  Her şeyi kontrol etmem için bana <i>adminlik</i> vermen lazım tatlım. ✨
   
-  ➤ <b>Bana</b> <code>Üyeleri Davet Et / Sohbeti Yönet</code> yetkisi verin.
+  ➤ <b>Bana</b> <code>Üyeleri Davet Et / Sohbeti Yönet</code> yetkisi ver hemen!
 
 err_assistant_get_failed: |
-  ⚠️ Sisteme bir asistan atanamadı.
-
-  <i>Bu genellikle geçici bir sorundur.</i>
-
-  <b>➡️ Lütfen komutu tekrar deneyin.</b>
+  ⚠️ Ay asistan bulamadım tatlım! Bir daha denesene?
   
 err_assistant_join_rate_limited: |
-  ⚠️ Asistan bu sohbete katılamıyor çünkü katılabileceği maksimum grup sınırına ulaştı.
+  ⚠️ Ay asistan çok yorulmuş, şu an daha fazla gruba giremiyor tatlım.
 
 err_assistant_join_request_sent: |
-  ⚠️ Asistan katılım isteği gönderdi ancak otomatik onaylayamadım.
-
-  <i>✅ Lütfen isteği manuel onaylayıp tekrar deneyin.</i>
+  ⚠️ Asistan girmek için kapıda bekliyor, onaylasana aşkooo! ✨
 
 err_assistant_invite_link_fetch: |
-  ⚠️ Davet bağlantısı alınamadı:
-  <i>{error}</i>
+  ⚠️ Davet linkini bulamadım bebeğim: <i>{error}</i>
 
 err_assistant_invite_failed: |
-  ⚠️ Asistan katılamadı:
-  <i>{error}</i>
+  ⚠️ Asistan katılamadı tatlım: <i>{error}</i>
 
 err_no_active_voicechat: |
-  🎙️ <b>Aktif Görüntülü Sohbet Yok</b>
+  🎙️ <b>Ay Sohbet Açık Değil!</b>
 
-  Katılamıyorum — lütfen önce bir görüntülü sohbet başlatın.
+  Giremiyorum — önce sesli/görüntülü sohbeti başlatsana tatlım! 🌸
 
-  <i>Zaten başlattınız mı? Yenilemek için /reload kullanın.</i>
+  <i>Açık mı? O zaman /reload yaz da göreyim aşkooo.</i>
 
 err_fetch_failed: |
-  ⚠️ Sohbet bilgisi alınamadı:
-  <i>{error}</i>
+  ⚠️ Grubu tanıyamadım tatlım: <i>{error}</i>
 
 err_peer_resolve_failed: |
-  ⚠️ Bilgiler çözümlenemedi. Daha sonra deneyin veya asistanı tekrar ekleyin.
+  ⚠️ Kafam karıştı tatlım. Sonra bir daha dene ya da asistanı tekrar çağır.
 
 err_rtmp_missing_params: |
-  <b>⚠️ RTMP Detayları Eksik</b>
-
-  <i>RTMP yayını aktif gibi görünüyor ancak gerekli <b>URL</b> veya <b>Anahtar</b> sağlanmamış.</i>
+  <b>⚠️ Bilgiler Eksik Aşko</b>
 
   <b>Kullanım:</b> <code>/setrtmp [chat_id] [url+anahtar]</code>
   
 err_unknown: |
-  ⚠️ Bilinmeyen Hata Oluştu:
-  <i>{error}</i>
+  ⚠️ Ay bir şeyler oldu ama anlamadım: <i>{error}</i>
 
 err_fetch_tracks: |
-  ⚠️ <b>Şarkı detayları alınamadı.</b>
-  Lütfen daha sonra tekrar deneyin.
+  ⚠️ <b>Şarkıyı bulamadım tatlım.</b> Bir daha denesene? ✨
 
 err_download_internal: |
-  ⚠️ <b>İndirme başarısız</b> (Dahili hata).
-  Lütfen tekrar deneyin.
+  ⚠️ <b>İndiremedim tatlım</b> (İçeride bir şeyler karıştı).
   
-flood_seconds: "⏳ Çok hızlısın! {duration} saniye sonra tekrar dene."
-flood_minutes: "⏳ Lütfen {duration} dakika bekleyin."
+flood_seconds: "⏳ Ay çok hızlısın! {duration} saniye bekle de nefes alayım."
+flood_minutes: "⏳ Ay tatlım {duration} dakika beklemen lazım, çok yoruldum!"
 
-help_private_only: "🤖 Merhaba! Komutlar ve yardım için bana özelden mesaj atın — orada daha hızlı yanıt veririm!"
-help_main: "📚 <b>Yardım Menüsü</b>\n\nBotu yönetmek, kontrol etmek ve özelleştirmek için aşağıdaki kategorilerden birini seçin."
+help_private_only: "🤖 Selam aşko! Komutları ve yardımı bana özelden sor, burada kalabalık yapmayalım! 💅✨"
+help_main: "📚 <b>Aşko Kuşko Yardım Menüsü</b>\n\nNeleri merak ediyorsan aşağıdan seç tatlım, her şeyi anlatayım! 🌸🎀"
 
-jump_no_active: "⚠️ <b>Atlama yapılabilecek aktif parça yok.</b>"
-jump_usage: "⚠️ Lütfen saniye belirtin.\nÖrnek: <code>{cmd} 120</code>"
-jump_invalid_position: "⚠️ Geçersiz konum.\nÖrnek: <code>{cmd} 120</code>"
-jump_too_close_end: "⚠️ <b>{position}</b> konumuna atlanamaz — parçanın sonuna çok yakın."
-jump_failed: "❌ <b>{position}</b> konumuna atlanamadı.\nHata: <code>{error}</code>"
-jump_success: "⏩ <u>{duration}</u> süreli parçada <u>{position}</u> konumuna atlandı."
+jump_no_active: "⚠️ <b>Atlayacak bir şey yok ki aşko!</b>"
+jump_usage: "⚠️ Ay kaçıncı saniyeye gideyim? Örnek: <code>{cmd} 120</code>"
+jump_invalid_position: "⚠️ Yanlış yazdın tatlım! Örnek: <code>{cmd} 120</code>"
+jump_too_close_end: "⚠️ Ay bitiyor zaten tatlım, nereye zıplayayım?"
+jump_failed: "❌ Zıplayamadım aşko: <code>{error}</code>"
+jump_success: "⏩ Ay şarkının <u>{position}</u> saniyesine uçtuk bile! ✈️✨"
 
-lang_same: "ℹ️ Zaten bu dili kullanıyorsunuz."
-lang_select: "🌐 Tercih ettiğiniz dili seçin:"
-lang_fail: "❌ Dil güncellenemedi."
-lang_success: "✅ Dil başarıyla {lang_name} olarak güncellendi."
+lang_same: "ℹ️ Ay zaten bu dili konuşuyoruz tatlım!"
+lang_select: "🌐 Hangi dilde dedikodu yapalım aşko?"
+lang_fail: "❌ Dili değiştiremedim bebeğim."
+lang_success: "✅ Artık seninle {lang_name} konuşacağız tatlım! 🌸"
 
-logger_playback_started: "Oynatma Başladı"
-logger_playback_queued: "Kuyruğa Eklendi"
+logger_playback_started: "Şov Başladı ✨"
+logger_playback_queued: "Listeye Alındı 🎀"
 
 logger_bot_added: |
-  🤖 <b>Bot Yeni Gruba Eklendi</b>
+  🤖 <b>Ay Yeni Bir Gruba Girdim! ✨</b>
   
   <blockquote>
-  <b>Grup Adı:</b> {group_name}
-  <b>ID:</b> {group_id}
+  <b>Grup:</b> {group_name}
   <b>Kullanıcı Adı:</b> {group_username}
 
-  <b>Ekleyen:</b> {added_by_name}
-  <b>Kullanıcı ID:</b> {added_by_id}
+  <b>Beni Alan Şanslı:</b> {added_by_name}
   </blockquote>
 
 logger_bot_removed: |
-  🤖 <b>Bot Gruptan Çıkarıldı</b>
+  🤖 <b>Ay Beni Gruptan Attılar! 🥺</b>
   <blockquote>
-  <b>Grup Adı:</b> {group_name}
-  <b>ID:</b> {group_id}
-
-  <b>Çıkaran:</b> {removed_by_name}
-  <b>ID:</b> {removed_by_id}
+  <b>Grup:</b> {group_name}
+  <b>Şutlayan:</b> {removed_by_name}
   </blockquote>
   
 logger_bot_started: |
-  ▶️ <b>{mention} botu başlattı</b>
-
-  <b>Kullanıcı:</b> {user_username}
-  <b>ID:</b> {user_id}
+  ▶️ <b>{mention} botu uyandırdı ✨</b>
   
 logger_track: "🎧 Parça:"
 logger_source: "🔗 Kaynak:"
 logger_group: "📌 Grup:"
-logger_requested_by: "👤 İsteyen:"
+logger_requested_by: "👤 İsteyen Aşko:"
 logger_timestamp: "⏳ Zaman:"
 
-loop_usage: "🔁 <b>Döngü Kontrolü</b>\n\nKullanım: {cmd} [sayı]\n• 0 - Devre dışı\n• 1-10 - Döngü sayısı\n\n<i>{count_line}</i>"
-loop_invalid: "⚠️ <b>Geçersiz döngü sayısı.</b>\n0 (kapat) veya 1-10 arası bir sayı kullanın."
-loop_already_set: "⚠️ Döngü zaten <b>{count}</b> olarak ayarlı."
-loop_disabled: "🔁 Döngü {user} tarafından <b>kapatıldı</b>."
-loop_set: "🔁 <b>{count}</b> kez döngüye ayarlandı\n└ Ayarlayan: {user}"
-loop_current: "• Mevcut döngü: <b>{count}</b> kez"
+loop_usage: "🔁 <b>Döngü Şovu</b>\n\nKullanım: {cmd} [sayı]\n• 0 - Kapat tatlım\n• 1-10 - Kaç kere dönsün? 🌸"
+loop_invalid: "⚠️ <b>Yanlış sayı aşko!</b>\n0 ile 10 arası bir şey yaz tatlım."
+loop_already_set: "⚠️ Zaten <b>{count}</b> kere döneceğim tatlım."
+loop_disabled: "🔁 Döngüyü {user} aşkım <b>kapattı</b>. 💅"
+loop_set: "🔁 Şarkı tam <b>{count}</b> kere dönecek! 💃\n└ Ayarlayan: {user}"
+loop_current: "• Şu anki döngü: <b>{count}</b> kere"
 
 logger_usage: "⚙️ Kullanım: <code>{cmd} [enable|disable]</code>\n\n{status}"
 logger_status: "📜 Mevcut durum: {action}"
-logger_check_fail: "❌ Kayıtçı durumu kontrol edilemedi: {error}"
-logger_already: "ℹ️ Kayıtçı zaten {action}."
-logger_update_fail: "❌ Kayıtçı güncellenemedi: {error}"
-logger_updated: "✅ Kayıtçı başarıyla <b>{action}</b> yapıldı."
+logger_check_fail: "❌ Kayıtçıyı kontrol edemedim: {error}"
+logger_already: "ℹ️ Kayıtçı zaten {action} modunda tatlım."
+logger_update_fail: "❌ Güncelleyemedim: {error}"
+logger_updated: "✅ Kayıtçı artık <b>{action}</b> tatlım. 💅✨"
 
-# Günlükler (Logs)
-logs_invalid_number: "⚠️ <b>Geçersiz Sayı</b>\n\n<code>{value}</code> geçerli bir sayı değil."
-logs_invalid_flag: "⚠️ <b>Geçersiz Bayrak</b>\n\nBilinmeyen seçenek: <code>{flag}</code>"
-logs_file_error: "❌ <b>Dosya Hatası</b>\n\nGünlüklere erişilemiyor:\n<code>{error}</code>"
-logs_send_error: "❌ <b>Gönderme Başarısız</b>\n<code>{error}</code>"
-logs_clear_failed: "❌ <b>Temizlik Başarısız</b>\n<code>{error}</code>"
-logs_empty: "📭 <b>Günlük Bulunmuyor</b>"
-logs_preview_header: "📋 <b>Güncel Günlük Önizlemesi:</b>"
-logs_lines_header: "📋 <b>Son Satırlar</b> (Son {count})"
-logs_old_header: "📋 <b>En Eski Satırlar</b> (İlk {count})"
-logs_uploading: "⏳ <b>Dosya yükleniyor...</b>"
-logs_file_caption: "📄 <b>Dosya Detayları</b>\n\n<b>Boyut:</b> {size_mb} MB"
-logs_cleared: "✅ <b>Günlük Temizlendi</b>"
+# Günlükler
+logs_invalid_number: "⚠️ <b>Bu sayı ne aşko?</b>\n\n<code>{value}</code> düzgün bir sayı değil tatlım."
+logs_invalid_flag: "⚠️ <b>Yanlış seçenek tatlım!</b>"
+logs_file_error: "❌ <b>Dosya Hatası:</b> <code>{error}</code>"
+logs_send_error: "❌ <b>Gönderemedim:</b> <code>{error}</code>"
+logs_clear_failed: "❌ <b>Temizleyemedim:</b> <code>{error}</code>"
+logs_empty: "📭 <b>Hiç kayıt yok tatlım, tertemiz!</b>"
+logs_preview_header: "📋 <b>Neler Olmuş Bak Bakalım:</b>"
+logs_lines_header: "📋 <b>Son Dedikodular</b> (Son {count})"
+logs_old_header: "📋 <b>Eski Defterler</b> (İlk {count})"
+logs_uploading: "⏳ <b>Dosyayı yüklüyorum aşkooo...</b>"
+logs_file_caption: "📄 <b>Dosya Geldi Tatlım</b>\n\n<b>Boyut:</b> {size_mb} MB ✨"
+logs_cleared: "✅ <b>Hepsini sildim gitti!</b> ✨🧼"
 
-maint: "⚠️ Şu an bakımdayım ve geçici olarak hizmet veremiyorum. Lütfen daha sonra tekrar deneyin.\n\n{reason}"
+maint: "⚠️ Ay şu an süsleniyorum (bakımdayım), hizmet veremem tatlım! Birazdan gelirim.\n\n{reason}"
 maint_reason: "<i>📝 Sebep: {reason}</i>"
 
-# ⚙️ Bakım kontrolü
-maint_usage: "⚙️ <b>Bakım Kontrolü</b>\n\nKullanım: {cmd} [enable|disable] [sebep]\n📜 Durum: {status}"
-maint_check_fail: "❌ Bakım durumu kontrol edilemedi: <code>{error}</code>"
-maint_already_enabled: "ℹ️ Bakım modu zaten etkin 🟢."
-maint_already_disabled: "ℹ️ Bakım modu zaten kapalı 🔴."
-maint_enabled: "✅ Bakım modu <b>etkinleştirildi</b>."
-maint_disabled: "✅ Bakım modu <b>kapatıldı</b>."
-enabled_with_reason: "🟢 Etkin\n📝 Sebep: {reason}"
+# Bakım
+maint_usage: "⚙️ <b>Bakım Ayarı</b>\n\nKullanım: {cmd} [enable|disable] [sebep]\n📜 Durum: {status}"
+maint_check_fail: "❌ Kontrol edemedim aşko: <code>{error}</code>"
+maint_already_enabled: "ℹ️ Bakım zaten açık tatlım 🟢."
+maint_already_disabled: "ℹ️ Bakım zaten kapalı bebeğim 🔴."
+maint_enabled: "✅ Bakım modunu <b>açtım</b>, dinleniyorum! ✨"
+maint_disabled: "✅ Bakımı <b>bitirdim</b>, şova hazırım! ✨💃"
+enabled_with_reason: "🟢 Açık\n📝 Sebep: {reason}"
 
-move_usage: "⚠️ Kullanım: <code>{cmd} [nereden] [nereye]</code>"
-move_invalid_numbers: "⚠️ Geçersiz sayılar. Örnek: <code>/{cmd} 2 1</code>"
-move_success: "✅ Şarkı {from}. sıradan {to}. sıraya taşındı ({user})."
+move_usage: "⚠️ Nasıl yapalım tatlım? Örnek: <code>/{cmd} 2 1</code>"
+move_invalid_numbers: "⚠️ Sayıları yanlış yazdın aşko!"
+move_success: "✅ Şarkıyı {from}. sıradan {to}. sıraya taşıdım tatlım! ({user}) 💅"
 
-# 🔇 Sessize Alma
-mute_already_muted: "🔇 <b>Zaten Sessiz</b>\nMüzik zaten sessize alınmış."
-mute_failed: "❌ <b>Sessize alma başarısız</b>\nHata: <code>{error}</code>"
+# Sessize Alma
+mute_already_muted: "🔇 <b>Ay zaten sustum!</b>\nDaha ne kadar sessiz olayım aşko?"
+mute_failed: "❌ <b>Susturamadım:</b> <code>{error}</code>"
 mute_success: |
-  🔇 <b>Ses Kapatıldı</b>
+  🔇 <b>Ay Sustum! 🤫</b>
 
   🎵 Parça: {title}
-  👤 Kapatan: {user}
+  👤 Susturan: {user} 💅
 
 no_song_query: |
-  <b>🎵 Hop! Şarkı adı algılanamadı.</b>
+  <b>🎵 Ay tatlım, hangi şarkıyı açayım?</b>
 
-  <i>Çalmak için <b>{cmd} [şarkı adı]</b> yazın veya bir medyaya yanıt verin!</i>
+  <i>Boş boş bakma öyle, <b>{cmd} [şarkı adı]</b> yaz da dans edelim! 💃✨</i>
 
-no_song_found: "❌ Şarkı bulunamadı."
+no_song_found: "❌ Ay aradım ama bulamadım tatlım. 🥺"
 
 nothumb_status: |
-  🖼️ <b>Kapak Resmi Kontrolü</b>
+  🖼️ <b>Kapak Resmi Ayarı</b>
   
-  <i>Etkinleştirildiğinde, mesajlarda kapak resmi görünmez.</i>
+  <i>Bunu açarsan kapak resimlerini göstermem tatlım.</i>
   
   <b>📊 Kullanım: {cmd} [enable|disable]</b>
   
-nothumb_already: "ℹ️ Kapak resmi gösterimi zaten {action}."
-nothumb_updated: "🖼️ Kapak resmi gösterimi <b>{action}</b> yapıldı."
+nothumb_already: "ℹ️ Resim gösterme zaten {action} tatlım."
+nothumb_updated: "🖼️ Resim gösterme <b>{action}</b> yapıldı. 💅"
 
-only_admin: "⚠️ <b>Yetki Reddedildi!</b>\nBunu sadece <b>yöneticiler</b> yapabilir. Siz şarkı çalmaya devam edebilirsiniz 🎵."
-only_admin_or_auth: "⚠️ <b>Erişim Reddedildi</b>\nBunu sadece <b>yöneticiler</b> veya <b>yetkili kullanıcılar</b> yapabilir."
-only_supergroup: "⚠️ Bu komut sadece gruplarda kullanılabilir."
-only_owner: "⚠️ Sadece bot sahibi bu komutu kullanabilir."
-only_sudo: "⚠️ Sadece sudo kullanıcıları veya bot sahibi bu komutu kullanabilir."
+only_admin: "⚠️ <b>Ay dur orda!</b>\nBunu sadece <b>admin aşkolar</b> yapabilir. Sen şarkı dinle tatlım 🎵."
+only_admin_or_auth: "⚠️ <b>Yetkin yok bebeğim!</b>\nAdmin veya yetkili olman lazım tatlım."
+only_supergroup: "⚠️ Ay burası grup değil ki, kullanamam tatlım!"
+only_owner: "⚠️ Ay bunu sadece Büyük Patron yapabilir!"
+only_sudo: "⚠️ Sadece sudo aşkolar veya Büyük Patron yapabilir tatlım."
 
 pause_already: |
-  ⏸️ <b>Zaten Duraklatıldı</b>
-  Müzik zaten duraklatılmış durumda.{auto_resume_line}
+  ⏸️ <b>Ay zaten dondurdum!</b>
+  Bekliyoruz işte tatlım.{auto_resume_line}
 
 pause_success: |
-  ⏸️ <b>Oynatma Duraklatıldı</b>
+  ⏸️ <b>Oynatma Donduruldu</b>
 
   🎵 Parça: {title}
   ⏱️ Konum: {position} / {duration}
-  👤 Duraklatan: {user}
+  👤 Donduran: {user} 💅
   {auto_resume_line}
 
 play_single_track_too_long: |
-  ⚠️ {limit_mins} dakikadan uzun şarkıları çalamazsınız.
-  <i>{title}</i> atlandı.
+  ⚠️ Ay tatlım {limit_mins} dakikadan uzun şarkıları hiç çekemem!
+  <i>{title}</i> atlandı tatlım. 💅
 
 play_download_failed: |
-  ❌ "<i>{title}</i>" indirilemedi.
+  ❌ "<i>{title}</i>" şarkısını indiremedim bebeğim.
   Hata: <code>{error}</code>
 
 play_added_to_queue_single: |
-  <b>🎵 Kuyruğa Eklendi:</b>
+  <b>🎵 Dedikodu Listesine (Kuyruğa) Eklendi:</b>
 
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
   <b>▫ Süre:</b> {duration}
-  <b>▫ İsteyen:</b> {by}
+  <b>▫ İsteyen Aşko:</b> {by} ✨🌸
 
-play_failed: "❌ Çalma başarısız\nHata: {error}"
-play_unable: "<b> ❌ Oynatılamıyor </b>\n\n<i>Lütfen görüntülü sohbeti <b>yeniden başlatın</b>.</i>"
-play_downloading_song: "📥 Şarkı indiriliyor: \"{title}\""
-play_added_multiple_header: "➕ <b>{count} parça eklendi</b> (İsteyen: {user})"
+play_failed: "❌ Ay açamadım şarkıyı! Hata: {error}"
+play_unable: "<b> ❌ Oynatılamıyor Tatlım </b>\n\n<i>Lütfen sohbeti <b>yeniden başlatın</b>.</i>"
+play_downloading_song: "📥 Şarkıyı süslüyorum (indiriyorum): \"{title}\" ✨"
+play_added_multiple_header: "➕ <b>{count} tane bomba eklendi!</b> (İsteyen: {user}) ✨💅"
 
-# 🏓 Ping
-ping_start: "🏓 Ping ölçülüyor..."
+# Ping
+ping_start: "🏓 Ping ölçüyorum bebeğim, bekle iki dakika..."
 ping_result: |
-  <b>🏓 PONG</b>: <code>{latency}ms</code>
+  <b>🏓 PONG AŞKOOO!</b>: <code>{latency}ms</code>
   
-  <b><u>🤖 {bot} Sistem Durumu :</u></b>
+  <b><u>🤖 {bot} Nasıl Hissediyor :</u></b>
   
-  <b>Çalışma Süresi:</b> {uptime}
+  <b>Ne Zamandır Ayaktayım:</b> {uptime}
   <b>RAM Kullanımı:</b> {ram_info}
-  <b>CPU Kullanımı:</b> {cpu_usage}
+  <b>CPU Kullanımı:</b> {cpu_usage} ✨💅
 
 position_now: |
   🎵 <b>{title}</b>
   📍 <code>{position} / {duration}</code>
-  ⚙️ Hız: <b>{speed}x</b>
+  ⚙️ Hızım: <b>{speed}x</b> 🏃‍♀️✨
 
-queue_no_active: "⚠️ <b>Aktif oynatma yok.</b>\nŞu an kuyruk boş."
-queue_header: "🎶 <b>Mevcut Kuyruk</b>"
-queue_now_playing: "▶️ <b>Şimdi Çalıyor:</b>"
-queue_up_next: "⏭️ <b>Sıradaki:</b>"
-queue_empty: "⚠️ <b>Kuyruk zaten boş.</b>"
+queue_no_active: "⚠️ <b>Ay liste bomboş tatlım!</b>"
+queue_header: "🎶 <b>Dedikodu Listesi (Kuyruk) ✨</b>"
+queue_now_playing: "▶️ <b>Şu An Çalan Güzellik:</b>"
+queue_up_next: "⏭️ <b>Sıradaki Bombalar:</b>"
+queue_empty: "⚠️ <b>Ay liste zaten boş tatlım!</b>"
 
-# 🔄 Yenile
-reload_start: "⚙️ Yönetici önbelleği ve asistan durumu yenileniyor..."
-reload_done: "<b>⚙️ Yenileme tamamlandı:</b>\n\n{summary}"
+# Yenile
+reload_start: "⚙️ Kendimi tazeliyorum aşkooo, bekle iki dakika..."
+reload_done: "<b>⚙️ Yenilendim, fıstık gibi oldum tatlım:</b>\n\n{summary} 💅✨"
 
-reload_admin_cache_ok: "<b>• Yönetici Önbelleği:</b> <i>✅ Başarılı</i>"
-reload_voice_active: "<b>• Görüntülü Sohbet:</b> <i>✅ Aktif</i>"
-reload_assistant_present: "<b>• Asistan:</b> <i>✅ Hazır</i>"
+reload_admin_cache_ok: "<b>• Adminleri Hatırladım:</b> <i>✅ Başarılı</i>"
+reload_voice_active: "<b>• Sesli Sohbet:</b> <i>✅ Aktif</i>"
+reload_assistant_present: "<b>• Asistanım:</b> <i>✅ Hazır</i>"
 
-remove_usage: "⚠️ <b>Hatalı kullanım.</b>\nKullanım: <code>{cmd} [sıra_no]</code>"
-remove_success: "✅ Kuyruğun <b>{index}.</b> sırasındaki şarkı çıkarıldı.\n👤 Yapan: {user}"
+remove_usage: "⚠️ <b>Yanlış yazdın tatlım!</b>\nKullanım: <code>{cmd} [sıra_no]</code>"
+remove_success: "✅ Listenin <b>{index}.</b> sırasındaki şarkıyı şutladım! 💅\n👤 Yapan: {user}"
 
-# 🔁 Tekrar
+# Tekrar
 replay_success: |
-  🔁 <b>Tekrar oynatılıyor</b>
+  🔁 <b>Ay baştan açıyorum, çok sevdim! ✨</b>
 
   🎵 Parça: {title}
   ⏱️ Süre: <code>{duration}</code>
 
-# ▶️ Devam
-resume_already_playing: "ℹ️ <b>Zaten Çalıyor</b>\nMüzik zaten oynatılıyor."
+# Devam
+resume_already_playing: "ℹ️ <b>Ay zaten çalıyor!</b>\nDuymuyor musun aşko?"
 resume_success: |
-  ▶️ <b>Oynatma devam ediyor</b>
+  ▶️ <b>Oynatma devam ediyor tatlım! ✨</b>
 
   🎵 Parça: {title}
   📍 Konum: {position} / {duration}
-  👤 Devam ettiren: {user}
+  👤 Devam ettiren: {user} 🌸
 
-restart: "♻️ Yeniden başlatılıyor..."
-restart_service: "{bot} yeniden başlatıldı. Lütfen 10-15 saniye sonra tekrar deneyin."
-restart_initiated: "✅ Yeniden başlatma tetiklendi!"
+restart: "♻️ Üstümü değiştirip geliyorum (yeniden başlıyorum)..."
+restart_service: "{bot} tazelendi! 10-15 saniye sonra tekrar gel tatlım. 💅"
+restart_initiated: "✅ Yeniden başlatma düğmesine bastım aşko! ✨"
 
-room_no_active: "⚠️ <b>Aktif oynatma yok.</b>"
+room_no_active: "⚠️ <b>Ay çalacak bir şey yok ki aşko!</b>"
 
 rtmp_now_streaming: |
-  📡 <b>Şimdi Yayında (RTMP):</b>
+  📡 <b>Yayındayız Aşkolar (RTMP):</b>
   
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
-  <b>▫ İsteyen:</b> {by}
+  <b>▫ İsteyen:</b> {by} ✨💅
 
-searching: "🔍🎶 Aranıyor... ⚡✨"
-searching_query: "🔍🎶 <b>{query}</b> aranıyor... ⚡✨"
+searching: "🔍🎶 Ay dur bir arayayım, hemen bulup geliyorum aşkooo... ⚡✨"
+searching_query: "🔍🎶 <b>{query}</b> şarkısını arıyorum bebeğim, bekle iki dakika! ⚡✨"
 
-speed_line: "⚙️ Hız: <b>{speed}x</b>"
+speed_line: "⚙️ Hızım: <b>{speed}x</b> 🏃‍♀️"
 
-stats_server_ram: "• RAM Kullanımı: {emoji} <code>{used_gib} GiB</code> | <code>{total_gib} GiB</code>"
-stats_served_chats: "• Gruplar: <code>{count}</code>"
-stats_served_users: "• Kullanıcılar: <code>{count}</code>"
+stats_server_ram: "• Hafızam: {emoji} <code>{used_gib} GiB</code> | <code>{total_gib} GiB</code>"
+stats_served_chats: "• Gruplar: <code>{count}</code> ✨"
+stats_served_users: "• Aşkolar: <code>{count}</code> ✨"
 
-# 👑 Sudo
-sudo_owner_self: "😂 Zaten patronsun, kendini neden ekliyorsun?"
-sudo_add_success: "✅ {user} (<code>{id}</code>) sudo listesine eklendi."
-sudo_remove_success: "🗑️ {user} (<code>{id}</code>) sudo listesinden çıkarıldı."
+# Sudo
+sudo_owner_self: "😂 Ay tatlım zaten patronsun, kendini mi ekleyeceksin?"
+sudo_add_success: "✅ {user} (<code>{id}</code>) artık sudo bebikolardan biri! ✨👑"
+sudo_remove_success: "🗑️ {user} (<code>{id}</code>) sudo listesinden şutlandı. 💅"
 
-seek_usage: "⚠️ Saniye belirtin. Örnek: <code>{cmd} 40</code>"
-seek_success: "{emoji} {direction} yönüne <u>{position}</u> / <u>{duration}</u> konumuna gidildi."
+seek_usage: "⚠️ Kaçıncı saniyeye gidelim aşko? Örnek: <code>{cmd} 40</code>"
+seek_success: "{emoji} {direction} yönüne <u>{position}</u> saniyesine uçtuk! ✈️✨"
 
-stopped: "⏹️ <b>Oynatma durduruldu ve kuyruk {user} tarafından temizlendi.</b>"
+stopped: "⏹️ <b>Şov bitti ve listeyi {user} aşkım temizledi. 💅✨</b>"
 
-shuffle_updated: "🔀 Karıştırma {user} tarafından <b>{state}</b> yapıldı."
+shuffle_updated: "🔀 Karıştırma modunu {user} aşkım <b>{state}</b> yaptı. ✨"
 
-skip_stopped: "⏹️ Oynatma durduruldu. Kuyruk boş.\nAtlayan: {user}"
+skip_stopped: "⏹️ Ay bitti her şey, liste boş tatlım!\nAtlayan: {user} 💅"
 
 speed_usage: |
-  💡 <b>Kullanım:</b>
-  <code>{cmd} [hız]</code> — oynatma hızını değiştirir
+  💡 <b>Nasıl Kullanılır Bebeğim:</b>
+  <code>{cmd} [hız]</code> — hızı değiştiririz tatlım.
   
-  İzin verilen aralık: <b>0.50x → 4.00x</b>
+  Aralık: <b>0.50x → 4.00x</b> 🏃‍♀️
 
-speed_set: "🚀 Oynatma hızı {user} tarafından <b>{speed}x</b> olarak ayarlandı."
+speed_set: "🚀 Hızımızı {user} aşkım <b>{speed}x</b> yaptı tatlım!"
 
-start_private: "Merhaba {user}, ben {bot}.\n\nTelegram üzerinden yüksek kaliteli müzik yayını yapabilen bir botum. Youtube, Spotify gibi platformları destekliyorum.\n\nBeni grubuna ekleyerek kullanabilirsin."
+start_private: "Merhaba {user} tatlım, ben {bot}! ✨\n\nTelegram'ın en pembiş ve en kaliteli müzik botuyum. Youtube, Spotify her yerden şarkı açarım.\n\nBeni grubuna ekle de kopmaya başlayalım aşkooo! 💅🌸"
 
-start_group: "<b>💫 Buradayım!</b> Komutları deneyin... tabi bana ayak uydurabilirseniz 😉"
+start_group: "<b>💫 Ay geldim bile!</b> Hadi komutları deneyin tatlışlar... ama bana ayak uydurabilecek misiniz bakalım? 😉💅"
 
-stream_queue_finished: "🎵 <b>Kuyruk Bitti!</b>\n\nÇalacak başka şarkı kalmadı. Yeni şarkılar eklemek için /play kullanın! 🎶"
+stream_queue_finished: "🎵 <b>Ay bitti her şey!</b>\n\nÇalacak başka şarkı kalmadı. Yeni şarkılar ekle de dans edelim aşkooo! 🎶💃"
 stream_now_playing: |
-  <b>🎵 Şimdi Oynatılıyor:</b>
+  <b>🎵 Şimdi Bu Çalıyor Aşkolar:</b>
 
   <b>▫ Parça:</b> <a href="{url}">{title}</a>
-  <b>▫ İsteyen:</b> {by}
+  <b>▫ İsteyen Aşko:</b> {by} ✨🌸
 
 unmute_success: |
-  🔊 <b>Ses açıldı</b>
+  🔊 <b>Ay açtım sesi, hadi kopuyoruz! ✨🕺</b>
 
   🎵 Parça: {title}
-  👤 Açan: {user}
+  👤 Açan: {user} 💅
 
-# 🔊 Görüntülü Sohbet Olayları
-voicechat_ended: "<b>⚠️ Görüntülü sohbet sona erdi</b>\n\n<i>⏰ Süre: {duration}</i>"
-voicechat_started: "<b>♻️ Görüntülü sohbet başladı!</b>\n\n<i>Müzik çalmak için /play [şarkı adı] yazın.</i>"
+# Sesli Sohbet
+voicechat_ended: "<b>⚠️ Ay bitti sohbet, tadımız kaçtı...</b>\n\n<i>⏰ Süre: {duration}</i>"
+voicechat_started: "<b>♻️ Ay sohbet başladı, hemen doluşun! ✨</b>\n\n<i>Hadi /oynat yazın da şov başlasın tatlışlar! 🎶✨</i>"
 
-# Yardım komutları
+# Yardım
 help_owner: |
-  👑 <b>Sahip Komutları</b>
-  <b>/addsudo</b> - Yeni sudo kullanıcı ekle
-  <b>/delsudo</b> - Sudo kullanıcıyı sil
-  <b>/maintenance</b> — Bakım modunu yönet
-  <b>/restart</b> — Botu yeniden başlat
+  👑 <b>Büyük Patron Komutları</b>
+  Benim sahibime özel sırlar tatlım! 🤫💅
 
 help_sudo: |
-  ⚡ <b>Sudo Komutları</b>
-  <b>/active</b> - Aktif sohbetleri göster
-  <b>/stats</b> - Sistem istatistiklerini göster
-  <b>/logs</b> - Sistem günlüklerini al
+  ⚡ <b>Sudo Aşko Komutları</b>
+  Patronun kankalarına özel işler! ✨💅
 
 help_admin: |
-  🛠 <b>Yönetici Komutları</b>
-  <b>/speed</b> - Hızı değiştir
-  <b>/skip</b> - Şarkıyı atla
-  <b>/pause</b> - Duraklat
-  <b>/resume</b> - Devam et
-  <b>/mute</b> - Sesi kapat
-  <b>/unmute</b> - Sesi aç
-  <b>/stop</b> - Durdur ve ayrıl
+  🛠 <b>Yönetici Güzelleri</b>
+  Sesi kıs, şarkıyı atla, durdur... Her şey sizde aşko! 🎀✨
 
 help_public: |
-  🌍 <b>Genel Komutlar</b>
-  <b>/play</b> - Şarkı çal
-  <b>/queue</b> - Kuyruğu gör
-  <b>/ping</b> - Gecikmeyi ölç
-  <b>/help</b> - Yardım menüsü
+  🌍 <b>Genel Şov Komutları</b>
+  Herkesin kullanabileceği tatlış komutlar! 🌸🎶
