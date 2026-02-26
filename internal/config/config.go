@@ -69,8 +69,8 @@ var (
 	DurationLimit  = int(getInt64("DURATION_LIMIT", 4200)) // in seconds
 	LeaveOnDemoted = getBool("LEAVE_ON_DEMOTED", false)
 	QueueLimit     = int(getInt64("QUEUE_LIMIT", 7))
-	SupportChat    = getString("SUPPORT_CHAT", "https://t.me/KiyiciZeminChat")
-	SupportChannel = getString("SUPPORT_CHANNEL", "https://t.me/KiyiciUpdate")
+	SupportChat    = getString("SUPPORT_CHAT", "https://t.me/admteamTR")
+	SupportChannel = getString("SUPPORT_CHANNEL", "https://t.me/admteamTR")
 	StartTime      = time.Now()
 	CookiesLink    = getString("COOKIES_LINK")
 	SetCmds        = getBool("SET_CMDS", false)
@@ -78,11 +78,11 @@ var (
 
 	StartImage = getString(
 		"START_IMG_URL",
-		"https://i.ibb.co/gL7t1Dp4/MG-20260219-224849-764.jpg",
+		"https://i.hizliresim.com/pvuzkim.jpg",
 	)
 	PingImage = getString(
 		"PING_IMG_URL",
-		"https://i.ibb.co/gL7t1Dp4/MG-20260219-224849-764.jpg",
+		"https://i.hizliresim.com/pvuzkim.jpg",
 	)
 
 	LogFileName = "logs.txt"
