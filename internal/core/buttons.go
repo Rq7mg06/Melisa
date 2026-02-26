@@ -1,22 +1,6 @@
 /*
   - This file is part of YukkiMusic.
-    *
-
-  - YukkiMusic — A Telegram bot that streams music into group voice chats with seamless playback and control.
-  - Copyright (C) 2025 TheTeamVivek
-    *
-  - This program is free software: you can redistribute it and/or modify
-  - it under the terms of the GNU General Public License as published by
-  - the Free Software Foundation, either version 3 of the License, or
-  - (at your option) any later version.
-    *
-  - This program is distributed in the hope that it will be useful,
-  - but WITHOUT ANY WARRANTY; without even the implied warranty of
-  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  - GNU General Public License for more details.
-    *
-  - You should have received a copy of the GNU General Public License
-  - along with this program. If not, see <https://www.gnu.org/licenses/>.
+  - Edited by KIYICI BOSS (@officialkiyici) - Aşko Kuşko Versiyonu 💅
 */
 package core
 
@@ -79,29 +63,28 @@ func GetPlayMarkup(chatID int64, r *RoomState, queued bool) tg.ReplyMarkup {
 		duration = track.Duration
 	}
 
+	// İlerleme çubuğunu daha tatlış yaptık aşkooo ✨
 	progress := utils.GetProgressBar(r.Position(), duration)
-	progress = formatDuration(
-		r.Position(),
-	) + " " + progress + " " + formatDuration(
-		duration,
-	)
+	progress = "🌸 " + formatDuration(r.Position()) + " " + progress + " " + formatDuration(duration) + " 🌸"
 
 	if !queued {
 		btn.AddRow(
 			tg.Button.Data(progress, "progress"),
 		)
 	}
+	
+	// Sembolleri daha modern ve aşko kuşko yaptık 💅
 	btn.AddRow(
-		tg.Button.Data("▷", prefix+"resume"),
-		tg.Button.Data("II", prefix+"pause"),
-		tg.Button.Data("‣‣I", prefix+"skip"),
-		tg.Button.Data("▢", prefix+"stop"),
+		tg.Button.Data("▶️", prefix+"resume"),
+		tg.Button.Data("⏸️", prefix+"pause"),
+		tg.Button.Data("⏭️", prefix+"skip"),
+		tg.Button.Data("⏹️", prefix+"stop"),
 	)
 
 	btn.AddRow(
-		tg.Button.Data("↩ 15s", "room:seekback_15"),
-		tg.Button.Data("⟳", "room:replay"),
-		tg.Button.Data("15s ↪", "room:seek_15"),
+		tg.Button.Data("⏪ 15s", "room:seekback_15"),
+		tg.Button.Data("🔁 Baştan", "room:replay"),
+		tg.Button.Data("15s ⏩", "room:seek_15"),
 	)
 
 	btn.AddRow(
@@ -194,9 +177,9 @@ func formatDuration(sec int) string {
 	s := sec % 60
 
 	if h > 0 {
-		return fmt.Sprintf("%d:%02d:%02d", h, m, s) // HH:MM:SS
+		return fmt.Sprintf("%d:%02d:%02d", h, m, s)
 	}
-	return fmt.Sprintf("%02d:%02d", m, s) // MM:SS
+	return fmt.Sprintf("%02d:%02d", m, s)
 }
 
 func F(chatID int64, key string, values ...locales.Arg) string {
@@ -204,18 +187,13 @@ func F(chatID int64, key string, values ...locales.Arg) string {
 	if GetChatLanguage != nil {
 		l, err := GetChatLanguage(chatID)
 		if err != nil {
-			gologging.Error(
-				"Failed to get language for " + utils.IntToStr(
-					chatID,
-				) + " Got error " + err.Error(),
-			)
+			gologging.Error("Ayy dilini bulamadım tatlım: " + err.Error())
 		} else {
 			lang = l
 		}
 	}
 
 	var val locales.Arg
-
 	if len(values) > 0 {
 		val = values[0]
 	}
